@@ -1,0 +1,139 @@
+*{margin: 0;padding: 0;background:#3f91cd;}
+.box{
+	width: 133px;height: 200px;
+	position: relative;
+	margin:260px auto;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;/*子元素将保留3d效果*/
+	-webkit-transform: perspective(800px) rotateX(-30deg);
+	-moz-transform: perspective(800px) rotateX(-30deg);
+	-ms-transform: perspective(800px) rotateX(-30deg);
+	-o-transform: perspective(800px) rotateX(-30deg);
+	transform: perspective(800px) rotateX(-30deg);
+}
+.box img{
+    width:100%;height:100%;
+	position: absolute;
+	-webkit-box-reflect:below 5px  /*box-reflect(倒影)*/
+    -webkit-linear-gradient(top,rgba(0,0,0,0) 50%,rgba(0,0,0,0.7) 100%);
+	transition: all 6s;
+	box-shadow:0 0 10px #fff;
+}
+
+/* 
+ box-reflect(倒影)
+语法：
+    box-reflect：none | <direction> <offset>? <mask-box-image>?
+    <direction> = above | below | left | right
+    <offset> = <length> | <percentage>
+    <mask-box-image> = none | <url> | <linear-gradient> | <radial-gradient> | <repeating-linear-gradient> | <repeating-radial-gradient>
+	    默认值：none
+	    适用于：所有元素
+	    继承性：无 
+取值：
+    none：无倒影
+    <direction>　Demo: 简单图片倒影 See with Webkit
+    above：指定倒影在对象的上边
+    below：指定倒影在对象的下边
+    left：指定倒影在对象的左边
+    right：指定倒影在对象的右边
+    <offset>　Demo: 图片与倒影间隔 See with Webkit
+    <length>：用长度值来定义倒影与对象之间的间隔。可以为负值
+    <percentage>：用百分比来定义倒影与对象之间的间隔。可以为负值
+    <mask-box-image>　Demo: 更真实的图片倒影 文字倒影与渐变 See with Webkit
+    none：无遮罩图像
+    <url>：使用绝对或相对地址指定遮罩图像。
+    <linear-gradient>：使用线性渐变创建遮罩图像。
+    <radial-gradient>：使用径向(放射性)渐变创建遮罩图像。
+    <repeating-linear-gradient>：使用重复的线性渐变创建背遮罩像。
+    <repeating-radial-gradient>：使用重复的径向(放射性)渐变创建遮罩图像。
+*/
+
+
+
+
+
+.box p{
+	width:1200px;
+	height:1200px;
+	position:absolute;
+	top: 100%;
+	left: 50%;
+	transform: rotateX(90deg);   /*旋转垂直*/
+	margin-top: -595px;
+	margin-left: -600px;
+	background: -webkit-radial-gradient(center center,600px 600px,rgba(255,255,255,0.3),rgba(255,255,255,0));}
+
+/*#box  img:nth-child(1){
+	-webkit-transform: translateZ(300px);
+	-moz-transform: translateZ(300px);
+	-ms-transform: translateZ(300px);
+	-o-transform: translateZ(300px);
+	transform: translateZ(300px);
+	}
+	#box  img:nth-child(2){
+	-webkit-transform:rotateY(36deg) translateZ(300px);
+	-moz-transform:rotateY(36deg) translateZ(300px);
+	-ms-transform:rotateY(36deg) translateZ(300px);
+	-o-transform:rotateY(36deg) translateZ(300px);
+	transform:rotateY(36deg) translateZ(300px);
+	}
+	#box  img:nth-child(3){
+	-webkit-transform:rotateY(72deg) translateZ(300px);
+	-moz-transform:rotateY(72deg) translateZ(300px);
+	-ms-transform:rotateY(72deg) translateZ(300px);
+	-o-transform:rotateY(72deg) translateZ(300px);
+	transform:rotateY(72deg) translateZ(300px);
+	}
+	#box  img:nth-child(4){
+	-webkit-transform:rotateY(108deg) translateZ(300px);
+	-moz-transform:rotateY(108deg) translateZ(300px);
+	-ms-transform:rotateY(108deg) translateZ(300px);
+	-o-transform:rotateY(108deg) translateZ(300px);
+	transform:rotateY(108deg) translateZ(300px);
+	}
+	#box  img:nth-child(5){
+	-webkit-transform:rotateY(144deg) translateZ(300px);
+	-moz-transform:rotateY(144deg) translateZ(300px);
+	-ms-transform:rotateY(144deg) translateZ(300px);
+	-o-transform:rotateY(144deg) translateZ(300px);
+	transform:rotateY(144deg) translateZ(300px);
+	}
+#box  img:nth-child(6){
+	-webkit-transform:rotateY(180deg) translateZ(300px);
+	-moz-transform:rotateY(180deg) translateZ(300px);
+	-ms-transform:rotateY(180deg) translateZ(300px);
+	-o-transform:rotateY(180deg) translateZ(300px);
+	transform:rotateY(180deg) translateZ(300px);
+	}
+	#box  img:nth-child(7){
+	-webkit-transform:rotateY(216deg) translateZ(300px);
+	-moz-transform:rotateY(216deg) translateZ(300px);
+	-ms-transform:rotateY(216deg) translateZ(300px);
+	-o-transform:rotateY(216deg) translateZ(300px);
+	transform:rotateY(216deg) translateZ(300px);
+	}
+	#box  img:nth-child(8){
+	-webkit-transform:rotateY(252deg) translateZ(300px);
+	-moz-transform:rotateY(252deg) translateZ(300px);
+	-ms-transform:rotateY(252deg) translateZ(300px);
+	-o-transform:rotateY(252deg) translateZ(300px);
+	transform:rotateY(252deg) translateZ(300px);
+	}
+	#box  img:nth-child(9){
+	-webkit-transform:rotateY(288deg) translateZ(300px);
+	-moz-transform:rotateY(288deg) translateZ(300px);
+	-ms-transform:rotateY(288deg) translateZ(300px);
+	-o-transform:rotateY(288deg) translateZ(300px);
+	transform:rotateY(288deg) translateZ(300px);
+	}
+	#box  img:nth-child(10){
+	-webkit-transform:rotateY(324deg) translateZ(300px);
+	-moz-transform:rotateY(324deg) translateZ(300px);
+	-ms-transform:rotateY(324deg) translateZ(300px);
+	-o-transform:rotateY(324deg) translateZ(300px);
+	transform:rotateY(324deg) translateZ(300px);
+	}
+*/

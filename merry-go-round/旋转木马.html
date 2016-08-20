@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/rotate.css"/>
+	</head>
+	<body>
+		<div class="box" id="box">
+			<img src="images/1.jpg"/>
+			<img src="images/2.jpg"/>
+			<img src="images/3.jpg"/>
+			<img src="images/4.jpg"/>
+			<img src="images/5.jpg"/>
+			<img src="images/6.jpg"/>
+			<img src="images/7.jpg"/>
+			<img src="images/8.jpg"/>
+			<img src="images/9.jpg"/>
+			<img src="images/10.jpg"/>
+			<img src="images/11.jpg"/>
+			<p></p>
+		</div>
+		<script type="text/javascript" src="jquery-1.11.3.js"></script>
+		<script type="text/javascript">
+			var count=0;
+			var $img=$('#box img').size();
+			//平均旋转角度
+			var num=360/$img;
+			$('#box img').each(function(index){
+				//图片的下标
+				$(this).css("transform","rotateY("+num*index+"deg) translateZ("+300+"px)");
+			})
+			var rx=ry=bx=by=0;
+			$(document).mousedown(function(evt){
+				var e=evt||event;
+				e.preventDefault();
+				var qx=e.pageX;
+				var qy=e.pageY;
+				$(this).mousemove(function(evt){
+					var e=evt||event;
+					var wx=e.pageX;				
+					var wy=e.pageY;
+					bx=(wx-qx)/2;
+					by=(wy-qy)/2;
+					$('.box').css("transform"," perspective(800px) rotateX(-30deg) rotateX("+(by+ry)+"deg) rotateY("+(bx+rx)+"deg)");
+				})
+			})
+			$(document).mouseup(function(){
+				$(this).unbind("mousemove");
+				rx=bx+rx;
+				ry=by+ry;
+			})
+		</script>
+		</body>
+		
