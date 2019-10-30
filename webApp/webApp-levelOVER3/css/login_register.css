@@ -1,0 +1,212 @@
+html {
+  font-size: 100px;
+  height: 100%;
+}
+body {
+  height: 100%;
+}
+#mySwiper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.swiper-slide {
+  overflow: hidden;
+}
+#page1 header {
+  width: 100%;
+  height: 0.88rem;
+  background: #a90506;
+  line-height: 0.88rem;
+  font-size: 0.34rem;
+  color: #fff;
+  text-align: center;
+}
+#page1 .form {
+  display: block;
+  background: #f3eff0;
+  height: 100%;
+  width: 100%;
+  padding-top: 0.3rem;
+}
+#page1 .form p {
+  width: 5.8rem;
+  height: 0.85rem;
+  margin: 0 auto 0.05rem;
+  overflow: hidden;
+  background: white;
+  border-radius: 0.05rem;
+}
+#page1 .form p input {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  padding: 0 0.2rem;
+  float: left;
+}
+#page1 .form input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #9b9b9b;
+  font-size: 0.26rem;
+}
+#page1 .form input::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #9b9b9b;
+  font-size: 0.26rem;
+}
+#page1 .form input:-ms-input-placeholder {
+  color: #9b9b9b;
+  font-size: 0.26rem;
+}
+#page1 .form input::-webkit-input-placeholder {
+  color: #9b9b9b;
+  font-size: 0.26rem;
+}
+#page1 .form #show,
+#page1 .form #remember {
+  display: none;
+}
+#page1 .form a {
+  padding-left: 0.26rem;
+  color: #ff0e53;
+  text-decoration: none;
+  font-size: 0.28rem;
+}
+#page1 .form .show {
+  width: 1.8rem;
+  height: 0.48rem;
+  font-size: 0.28rem;
+  margin: 0.5rem 0 0 0.44rem;
+  float: left;
+  line-height: 0.48rem;
+}
+#page1 .form .show img {
+  float: left;
+  width: 0.5rem;
+  height: 0.48rem;
+  margin-right: 0.1rem;
+}
+#page1 .form .remember {
+  width: 2.96rem;
+  height: 0.48rem;
+  font-size: 0.28rem;
+  margin: 0.5rem 0 0.5rem 0.44rem;
+  float: left;
+  clear: both;
+  line-height: 0.48rem;
+}
+#page1 .form .remember img {
+  float: left;
+  width: 0.5rem;
+  height: 0.48rem;
+  margin-right: 0.1rem;
+}
+#page1 #login,
+#page1 #register {
+  display: block;
+  width: 5.8rem;
+  height: 0.9rem;
+  border: none;
+  outline: none;
+  margin: 0 auto;
+  border-radius: 0.05rem;
+  color: #ffffff;
+  font-size: 0.34rem;
+}
+#page1 #login {
+  background: -webkit-linear-gradient(top, #d60808, #ab0505);
+}
+#page1 #register {
+  background: -webkit-linear-gradient(top, #5e5e5e, #232323);
+  margin-top: 0.1rem;
+}
+#page2 header {
+  position: relative;
+  width: 100%;
+  height: 0.88rem;
+  background: #a90506;
+  line-height: 0.88rem;
+  font-size: 0.34rem;
+  color: #fff;
+  text-align: center;
+}
+#page2 header img {
+  width: 0.48rem;
+  height: 0.41rem;
+  position: absolute;
+  left: 0.2rem;
+  top: 0.24rem;
+}
+#page2 section {
+  background: #f3eff0;
+  height: 100%;
+  width: 100%;
+  padding-top: 0.3rem;
+}
+#page2 section p {
+  width: 5.8rem;
+  height: 0.85rem;
+  margin: 0 auto 0.3rem;
+  overflow: hidden;
+  background: white;
+  border-radius: 0.05rem;
+}
+#page2 section p span {
+  float: left;
+  display: block;
+  width: 1.6rem;
+  height: 100%;
+  line-height: 0.85rem;
+  color: #505050;
+  font-size: 0.26rem;
+  text-align: center;
+}
+#page2 section p input {
+  float: left;
+  width: 4.2rem;
+  height: 100%;
+  border: 0;
+  padding: 0;
+}
+#page2 section p input:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #9b9b9b;
+  font-size: 0.26rem;
+}
+#page2 section p input::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #9b9b9b;
+  font-size: 0.26rem;
+}
+#page2 section p input:-ms-input-placeholder {
+  color: #9b9b9b;
+  font-size: 0.26rem;
+}
+#page2 section p input::-webkit-input-placeholder {
+  color: #9b9b9b;
+  font-size: 0.26rem;
+}
+#page2 section .h5 {
+  display: block;
+  font-size: 0.20rem;
+  color: orange;
+  width: 100%;
+  text-align: center;
+}
+#page2 #button {
+  display: block;
+  width: 5.8rem;
+  height: 0.9rem;
+  background: -webkit-linear-gradient(top, #d60808, #ab0505);
+  border: none;
+  outline: none;
+  font-size: 0.34rem;
+  color: #f1eff0;
+  margin: 1.8rem auto 0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+/*# sourceMappingURL=login_register.css.map */

@@ -1,0 +1,188 @@
+.main {
+  width: 100%;
+  height: 100%;
+}
+.main .top {
+  width: 100%;
+  height: 0.9rem;
+  background: #a81817;
+  position: relative;
+}
+.main .top .title {
+  display: block;
+  font-size: 0.36rem;
+  width: 1.5rem;
+  height: 0.4rem;
+  position: absolute;
+  left: 40%;
+  top: 0.25rem;
+  color: #fff;
+}
+.main .top img {
+  width: 1.21rem;
+  height: 0.57rem;
+  position: absolute;
+  right: 0.2rem;
+  top: 0.15rem;
+}
+.main .total {
+  width: 100%;
+  height: 0.36rem;
+  padding: 0.27rem 0;
+  background: #747474;
+}
+.main .total .goodsnum {
+  display: inline-block;
+  float: left;
+  width: 1.8rem;
+  height: 0.36rem;
+  margin-left: 0.2rem;
+  font-size: 0.28rem;
+  color: #fff;
+}
+.main .total .totalpay {
+  display: inline-block;
+  float: left;
+  width: 3.8rem;
+  height: 0.36rem;
+  margin-left: 0.3rem;
+  font-size: 0.28rem;
+  color: #fff;
+}
+.main #wrapper {
+  width: 100%;
+  height: 6.4rem;
+  overflow: hidden;
+}
+.main #wrapper ul {
+  width: 100%;
+  list-style: none;
+  overflow: hidden;
+}
+.main #wrapper ul li {
+  float: left;
+  width: 100%;
+  height: 2.32rem;
+  border-bottom: 0.01rem solid #aaaaaa;
+  position: relative;
+}
+.main #wrapper ul li a {
+  display: block;
+  width: 0.3rem;
+  height: 0.37rem;
+  background: url("../img/del.jpg") no-repeat left top;
+  background-size: cover;
+  position: absolute;
+  right: 0.2rem;
+  top: 0.3rem;
+}
+.main #wrapper ul li dl {
+  width: 5.2rem;
+  height: 1.75rem;
+  margin-left: 0.3rem;
+  margin-top: 0.3rem;
+}
+.main #wrapper ul li dl dt {
+  float: left;
+  width: 1.75rem;
+  height: 100%;
+  margin-right: 0.2rem;
+}
+.main #wrapper ul li dl dt img {
+  width: 100%;
+  height: 100%;
+}
+.main #wrapper ul li dl .name {
+  float: left;
+  width: 2.9rem;
+  height: 0.8rem;
+  font-size: 0.24rem;
+  line-height: 0.4rem;
+  overflow: hidden;
+}
+.main #wrapper ul li dl .singleprice {
+  float: left;
+  width: 2.9rem;
+  height: 0.4rem;
+  font-size: 0.24rem;
+  line-height: 0.4rem;
+  margin-bottom: 0.1rem;
+}
+.main #wrapper ul li dl .totalnum {
+  float: left;
+  width: 3.2rem;
+  height: 0.46rem;
+}
+.main #wrapper ul li dl .totalnum p {
+  font-size: 0.24rem;
+  float: left;
+  display: inline-block;
+  width: 0.8rem;
+  height: 100%;
+  text-align: left;
+  line-height: 0.46rem;
+}
+.main #wrapper ul li dl .totalnum .reduce {
+  float: left;
+  border: none;
+  outline: none;
+  margin-left: 0.08rem;
+  width: 0.65rem;
+  height: 0.46rem;
+  background: url("../img/reduce.jpg") no-repeat left top;
+  background-size: cover;
+}
+.main #wrapper ul li dl .totalnum .num {
+  float: left;
+  outline: none;
+  margin-left: 0.08rem;
+  width: 0.78rem;
+  height: 0.46rem;
+  border-radius: 0.1rem;
+  text-align: center;
+  font-size: 0.26rem;
+  line-height: 0.46rem;
+}
+.main #wrapper ul li dl .totalnum .ad {
+  float: left;
+  border: none;
+  outline: none;
+  margin-left: 0.08rem;
+  width: 0.65rem;
+  height: 0.46rem;
+  background: url("../img/add.jpg") no-repeat left top;
+  background-size: cover;
+}
+#tab {
+  width: 100%;
+  height: 1rem;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+  background: #484850;
+  display: -webkit-box;
+}
+#tab .menu {
+  -webkit-box-flex: 1;
+  box-sizing: border-box;
+  position: relative;
+}
+#tab .menu img {
+  width: 0.5rem;
+  height: 0.52rem;
+  position: absolute;
+  left: 0.4rem;
+  top: 0.1rem;
+}
+#tab .menu p {
+  width: 0.9rem;
+  font-size: 0.28rem;
+  color: white;
+  position: absolute;
+  top: 0.6rem;
+  left: 0.2rem;
+  text-align: center;
+  line-height: 0.28rem;
+}
+/*# sourceMappingURL=updatecar.css.map */

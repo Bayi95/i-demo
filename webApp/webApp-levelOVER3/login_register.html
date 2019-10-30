@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="src/swiper-3.3.1.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/login_register.css" />
+		<link rel="stylesheet" type="text/css" href="src/Reset.css" />
+		<script src="src/swiper-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="src/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/login_register.js" type="text/javascript" charset="utf-8"></script>
+		<title>登录/注册页面</title>
+	</head>
+
+	<body>
+		<div class="swiper-container" id="mySwiper">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide swiper-no-swiping" id="page1">
+					<header>开心摇摇用户登录</header>
+					<form action="#" class="form">
+						<p>
+							<input type="text" id="username_1" name="username_1" placeholder="请输入账户" />
+						</p>
+						<p>
+							<input type="password" name="password_1" id="password_1" placeholder="请输入密码" />
+						</p>
+
+						<label for="show" class="show">
+	                        <img src="img/login-checkoff.jpg" class="check1" />
+	                        <input type="checkbox" name="show" id="show" />显示密码
+	                    </label>
+							<a href="#" id="lost">忘记密码？</a>
+						<label for="remember" class="remember">
+	                        <img src="img/login-checkon.jpg" class="check2" />
+	                        <input type="checkbox" name="remember" id="remember" />记住密码自动登录
+	                    </label>
+						<input type="button" name="login" id="login" value="登录" />
+						<input type="button" name="register" id="register" value="注册" />
+					</form>
+				</div>
+
+				<div class="swiper-slide swiper-no-swiping" id="page2">
+					<header>
+						<img src="img/reg_back.jpg" alt="back_pic" id="back" />
+						<span>用户注册</span>
+					</header>
+					<section>
+						<p><span>账户名称： </span>
+							<input type="text" name="username" id="username" placeholder="请输入账户" />
+						</p>
+						<p><span>登录密码: </span>
+							<input type="password" name="password" id="password" placeholder="请输入密码" />
+						</p>
+						<p><span>确认密码: </span>
+							<input type="password" name="password1" id="password1" placeholder="请输入密码" />
+						</p>
+						<h5 class="h5"></h5>
+						<input type="button" id="button" value="确定注册" />
+					</section>
+				</div>
+			</div>
+		</div>
+
+	</body>
+
+</html>

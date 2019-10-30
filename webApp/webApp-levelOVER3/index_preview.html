@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="src/swiper-3.3.1.min.css" />
+		<link rel="stylesheet" type="text/css" href="src/animate.css" />
+		<link rel="stylesheet" type="text/css" href="css/preview.css" />
+		<link rel="stylesheet" type="text/css" href="src/Reset.css"/>
+		<script src="src/swiper-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="src/swiper.animate1.0.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="src/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/preview.js" type="text/javascript" charset="utf-8"></script>
+		<title>webApp</title>
+	</head>
+
+	<body>
+		<div id="page1">
+			<header><img src="img/pre1.jpg" alt="logo" /></header>
+			<section><img src="img/pre1_2.jpg" /></section>
+			<footer></footer>
+		</div>
+		<div class="swiper-container" id="mySwiper">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide" id="page2">
+					<section class="ani" swiper-animate-effect="bounce" swiper-animate-duration="2s" swiper-animate-delay="3.5s"><img src="img/pre2-bg.jpg" alt="" /></section>
+					<aside class="ani" swiper-animate-effect="lightSpeedIn" swiper-animate-duration="2s" swiper-animate-delay="4.5s">多联系，不孤单</aside>
+					<footer class="ani" swiper-animate-effect="tada" swiper-animate-duration="2s" swiper-animate-delay="5.5s">
+						<h2>走秀</h2><span>与</span><h3>你相伴</h3>
+					</footer>
+				</div>
+				<div class="swiper-slide" id="page3">
+					<img src="img/pre3-arr.jpg" class="arrow infinite ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="2s"/>
+					<span>放入购物袋</span>
+					<canvas id="canvas" width="230" height="230" class="ani" swiper-animate-effect="rubberBand" swiper-animate-duration="2s" swiper-animate-delay="1s"></canvas>
+					<div class="message ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="2s" swiper-animate-delay="1.5s">
+						<h2>满288元免运费</h2>
+						<p>(有活动还有更多惊喜哦！)</p>
+						<img src="img/pre3.jpg" alt="arrD" class="bar"/>
+					</div>
+				</div>
+				<div class="swiper-slide" id="page4">
+					<header  class="ani" swiper-animate-effect="lightSpeedIn" swiper-animate-duration="2s">走秀网商品</header>
+					<img src="img/pre4_2.jpg" alt="gift" class="gift ani" swiper-animate-effect="shake" swiper-animate-duration="2s" swiper-animate-delay="0.5s"/>
+					<div class="message ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="2s" swiper-animate-delay="0.2s">
+						<h2>每天十点</h2>
+						<p>新品抢购</p>
+						<img src="img/pre4_1.jpg" alt="arrU" class="bar"/>
+					</div>
+				</div>
+				<div class="swiper-slide" id="page5">
+					<img src="img/pre4_arr.jpg" class="arrow ani" swiper-animate-effect="lightSpeedIn" swiper-animate-duration="2s"/>
+					<span class="ani" swiper-animate-effect="lightSpeedIn" swiper-animate-duration="2s">NOW,开启走秀购物之行......</span>
+					<div id="button">开始体验</div>
+				</div>
+			</div>
+
+			<div class="swiper-pagination"></div>
+			<!--这是小按钮-->
+		</div>
+	</body>
+
+</html>
